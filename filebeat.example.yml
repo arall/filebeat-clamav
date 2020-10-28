@@ -1,0 +1,13 @@
+filebeat:
+  config:
+      modules:
+          path: ${path.config}/modules.d/*.yml
+  modules:
+    - module: clamav
+      log:
+        enabled: true
+
+tags: [workstation]
+
+cloud.id: "<elk_elastic_cloud_id>"
+cloud.auth: "<elk_elastic_cloud_auth>"

@@ -1,0 +1,9 @@
+- name: log
+  type: group
+  description: >
+    Contains fields for the ClamAV logs.
+  fields:
+    - name: file.path
+      type: keyword
+    - name: clamav.virus
+      type: keyword

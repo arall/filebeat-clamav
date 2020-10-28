@@ -1,0 +1,3 @@
+- module: clamav
+  log:
+    enabled: true
